@@ -1,0 +1,486 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: rgba(0, 255, 255, 0.171);   */
+    font-family: 'Song Myung', serif;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: contain;
+    background-color: #800000;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -5;
+}
+
+#curtain{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/curtain.png");
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.15; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#curtainRight{
+    width: auto;
+    height: 100%;
+    background-image: url("../images/curtain-right.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+#curtainLeft{
+    width: auto;
+    height: 100%;
+    background-image: url("../images/curtain-left.png");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.portfolio{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
+    width: 6.5vw;
+    height: 3vw;
+    font-size: 1.1vw;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 0.2vw #ad3232 solid;
+    color: #ad3232;
+    margin-left:1vw;
+    margin-top: 1vw;
+    min-width: fit-content;
+}
+
+.portfolio:hover{
+    border-color: maroon;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+}
+
+.portfolio:focus {
+    outline: 0;
+}
+
+div{
+   margin: 0 auto;
+   width: 50vw;
+   height: fit-content;
+}
+h1{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bolder;
+    margin-top: 3vw;
+    color: #800000;
+}
+
+h2{
+    text-align: center;
+    font-size: 3.6vw;
+    font-weight: bolder;
+    margin-top: 2vw;
+    
+}
+
+.start{
+    font-size: 2vw;
+    color: white;
+    background-color: #800000;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3vw;
+    padding: 0.7vw;
+    letter-spacing: 0.2vw;
+    margin-bottom: 2%;
+    font-family: 'Song Myung', serif;
+}
+
+.start:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.start:focus {
+    outline:0;
+}
+
+.start:active {
+    transform: translateY(4px);
+}
+
+#timer{
+    width: fit-content;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 0 1% 0 1%;
+    
+   
+}
+
+#ticketContainer{
+    display: none;
+    position: relative;
+    text-align: center;
+}
+#ticket{
+    width: 80%;
+    height: 80%;
+}
+#emoji{
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 4.2vw;
+    line-height: 5vw;
+}
+
+#orientation{
+    display: none;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+#filmContainer{
+    display: none;
+    position: relative;
+    text-align: center;
+    font-size: 1.5vw;
+}
+#film{
+    width: 100%;
+    height: 100%;
+}
+
+tr{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+#a, #b, #c, #d{
+    position: absolute;
+    width: 10.6vw;
+    height: 8.7vw;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: #ffffffaf;
+    border: 1px solid #ffffffaf;
+}
+
+#a{
+    top: 18%;
+    left: 0.5%;
+}
+
+#b{
+    top: 18%;
+    left: 25.3%;
+    
+}
+#c{
+    top: 18%;
+    right: 26.4%;
+
+}
+#d{
+    top: 18%;
+    right: 1.6%;
+}
+
+.hov:hover{
+    background-color: #ffd6bb !important;
+    border: 1px solid #ff6600 !important;
+    /* background-color: #04b604b7; */
+}
+
+.correctAnswer{
+    background-color:#04b604b7 !important;
+    border-color: #008000 !important;
+}
+
+.correctHeader{
+    color: #000000 !important;
+    background-color: #03b30380;
+    border-radius: 10px;
+
+}
+
+.incorrectAnswer{
+    background-color:#ff0000b3 !important;
+    border-color: #ff0000 !important;
+}
+
+.incorrectHeader{
+    color: #000000 !important;
+    background-color: #ff000066;
+    border-radius: 10px;
+  
+}
+
+#qNum{
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 8%;
+    bottom: 48%;
+    font-size: 2vw;
+}
+
+#results{
+    display: none;
+    font-size: 1.6vw;
+    font-weight: bold;
+    position: absolute;
+    top: 16%;
+    right: 1.5%;
+    
+}
+#done{
+    position: absolute;
+    top: 34%;
+    right: 27%;
+}
+
+
+#playAgain{
+    display: none;
+    justify-content: center;
+}
+
+#correct{
+    float: left;
+    width: fit-content;
+    position: absolute;
+    left: 22%;
+    top: 195%;
+    background-color: #0b920bd0;
+    color: white;
+    padding: 0.7%;
+    border-radius: 5px;
+}
+
+#incorrect{
+    float: left;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 195%;
+    background-color: #ff0000cb;
+    color: #ffffff;
+    padding: 0.7%;
+    border-radius: 5px;
+   
+}
+
+#unanswered{
+    float: left;
+    width: fit-content;
+    position: absolute;
+    top: 500%;
+    left: 40%;
+    background-color: #0000ffc2;
+    color: #ffffff;
+    padding: 0.7%;
+    border-radius: 5px;
+}
+
+@media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:portrait)
+{
+   #orientation{
+       display: block;
+   }
+   #curtainRight{
+        display:none;
+    }
+    #curtainLeft{
+        display:none;
+    }
+
+}
+
+
+@media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:landscape)
+{
+   #orientation{
+    display: none;
+    }
+   
+}
+
+@media screen and (max-device-width: 800px) and (orientation: portrait)
+{
+    #curtainRight{
+        right: -31vw;
+    }
+    #curtainLeft{
+        left: -31vw;
+    }
+}
+
+
+
+@media screen and (max-width: 1230px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -6vw;
+    }
+    #curtainLeft{
+        left: -6vw;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -8vw;
+    }
+    #curtainLeft{
+        left: -8vw;
+    }
+
+}
+
+@media screen and (max-width: 850px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -12vw;
+    }
+    #curtainLeft{
+        left: -12vw;
+    }
+
+}
+
+@media screen and (max-width: 725px)  and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -16vw;
+    }
+    #curtainLeft{
+        left: -16vw;
+    }
+
+}
+
+@media screen and (max-width: 640px)  and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -20vw;
+    }
+    #curtainLeft{
+        left: -20vw;
+    }
+
+}
+
+@media screen and (max-width: 570px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -26vw;
+    }
+    #curtainLeft{
+        left: -26vw;
+    }
+
+}
+
+@media screen and (max-width: 500px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -30vw;
+    }
+    #curtainLeft{
+        left: -30vw;
+    }
+
+}
+
+@media screen and (max-width: 440px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -21vw;
+    }
+    #curtainLeft{
+        left: -21vw;
+    }
+
+} 
+
+@media screen and (orientation:landscape)
+{
+    #curtainRight{
+        right: -4vw;
+    }
+    #curtainLeft{
+        left: -4vw;
+    }
+   
+}
+
+/* ----------- iPad Pro -----------
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      #curtainRight, #curtainLeft{
+          display: none;
+      }
+}
+
+@media screen and (device-width: 768px) and (device-height: 1024px) 
+{
+    #curtainRight, #curtainLeft{
+        display: none;
+    }
+}
