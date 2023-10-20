@@ -306,10 +306,10 @@ function currentQuestion(count){
 
     // displays the question if there are questions left to answer
     if (count < (movies.length/2)){
-        timeLeft = 10;
+        timeLeft = 20;
         $('#timer').removeClass('correctHeader incorrectHeader').css('color', '#000000');
-        $('#timer').text("Time Remaining: " + timeLeft + ' seconds');
-        myTimer = setInterval(countdown, 1000);
+        // $('#timer').text("Time Remaining: " + timeLeft + ' seconds');
+        // myTimer = setInterval(countdown, 1000);
         $('#emoji').html(movies[count].question);
         $('#a').html(movies[count].answers.a);
         $('#b').html(movies[count].answers.b);
