@@ -1,4 +1,8 @@
 body, html{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -9,27 +13,10 @@ body, html{
 #background{
     width: 100%;
     height: 100%;
-    background-image: url("../images/background.png");
     background-position: center;
-    background-size: contain;
-    background-color: #800000;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -5;
-}
-
-#curtain{
-    /* display: none; */
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/curtain.png");
-    background-position: center;
-    background-size: cover;
-    /* opacity: 0.15; */
+    background-size:cover;
+    background-color: #FFFADD;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
