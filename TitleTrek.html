@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>TitleTrek</title>
+</head>
+
+<body>
+    <div id="background"></div>
+    <header><img src="assets/images/reel.png" alt="reel" /></header>
+    <h1 id="mainh1">TitleTrek 🎫</h1>
+    <h2 id="line">Picture Puzzles for Movie Masters</h2>
+        <button class="level" id ="novice" onclick="redirectToEmojiGame()">Novice Trek</button>
+        <button class="level" id ="advanced" onclick="redirectToGifGame()">Advanced Trek</button>
+    <script>
+        function redirectToEmojiGame() {
+            window.location.href = "NoviceTrek.html";
+        }
+
+        function redirectToGifGame() {
+            window.location.href = "AdvancedTrek.html";
+        }
+    </script>
+</body>
+
+</html>

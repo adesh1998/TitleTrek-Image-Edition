@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Novice Trek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</head>
+<body>
+    <div id="background"></div>
+    <h1 id="h1t">&#x1F37F; Novice Trek &#x1F37F;</h1>
+    <h2 id="tag">Guess the Movie Name from Pictures</h2>
+    <button class="start" id ="play"> &#x1F3A5; BEGIN &#x1F3AC;</button>
+    <button class="start" id ="playAgain"> &#x1F3A5; START AGAIN! &#x1F3AC;</button>
+    <div id="ticketContainer">
+        <img id="ticket" src="assets/images/ticket.png">
+        <h3 id="emoji"></h3>
+        <h3 id="qNum"></h3>
+        <div id="results">
+            <h3id="done">Trivia Completed! Here's how you did!</h3>
+            <div id="correct">
+                <h3>Correct Answers</h3>
+                <h3 id="corNum"></h3>
+            </div>
+            <div id="incorrect">
+                <h3>Incorrect Answers</h3>
+                <h3 id="incorNum"></h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id ="filmContainer">
+        <img id="film" src="assets/images/film.png">
+        <table>
+            <tr>
+                <td>
+                    <div id="a" class="choice"></div>
+                </td>
+
+                <td>
+                    <div id="b" class="choice"></div>
+                </td>
+
+                <td>
+                    <div id="c" class="choice"></div>                    
+                </td>
+
+                <td>
+                    <div id="d" class="choice"></div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
