@@ -330,175 +330,7 @@ var movies = [
         correct: "Frozen",
         letter: "a",
     },
-    {
-        id: 25,
-        question: "&#x1F47E; &#x1F3A4; &#x1F42D;",
-        answers:{
-            a: "Ghostbusters",
-            b: "Beetlejuice",
-            c: "Casper",
-            d: "The Addams Family",
-        },
-        correct: "Ghostbusters",
-        letter: "a",
-    },
-    {
-        id: 26,
-        question: "&#x1F408; &#x1F981; &#x1F682;",
-        answers:{
-            a: "Ratatouille",
-            b: "Stuart Little",
-            c: "Flushed Away",
-            d: "The Tale of Despereaux",
-        },
-        correct: "Ratatouille",
-        letter: "a",
-    },
-    {
-        id: 27,
-        question: "&#x1F3AC; &#x1F463; &#x1F319;",
-        answers:{
-            a: "The Fast and the Furious",
-            b: "Cars",
-            c: "Mad Max: Fury Road",
-            d: "Drive",
-        },
-        correct: "Cars",
-        letter: "b",
-    },
-    {
-        id: 28,
-        question: "&#x1F30A; &#x1F4A5; &#x1F418;",
-        answers:{
-            a: "The Jungle Book",
-            b: "The Lion King",
-            c: "The Bear",
-            d: "Tarzan",
-        },
-        correct: "The Jungle Book",
-        letter: "a",
-    },
-    {
-        id: 29,
-        question: "&#x1F916; &#x1F4F0; &#x1F6F0;",
-        answers:{
-            a: "Terminator",
-            b: "Blade Runner",
-            c: "Transformers",
-            d: "RoboCop",
-        },
-        correct: "Transformers",
-        letter: "c",
-    },
-    {
-        id: 30,
-        question: "&#x1F471; &#x1F47B; &#x1F6B6;",
-        answers:{
-            a: "X-Men",
-            b: "The Avengers",
-            c: "Deadpool",
-            d: "Guardians of the Galaxy",
-        },
-        correct: "X-Men",
-        letter: "a",
-    },
-    {
-        id: 31,
-        question: "&#x1F468; &#x1F0CF; &#x1F3F0;",
-        answers:{
-            a: "Captain Phillips",
-            b: "Captain America: The First Avenger",
-            c: "Captain Marvel",
-            d: "Pirates of the Caribbean",
-        },
-        correct: "Captain America: The First Avenger",
-        letter: "b",
-    },
-    {
-        id: 32,
-        question: "&#x1F981; &#x1F680; &#x1F1F9;",
-        answers:{
-            a: "The Mask",
-            b: "The Incredible Hulk",
-            c: "Spider-Man",
-            d: "Green Lantern",
-        },
-        correct: "The Incredible Hulk",
-        letter: "b",
-    },
-    {
-        id: 33,
-        question: "&#x1F4A3; &#x1F916; &#x1F916;",
-        answers:{
-            a: "Kung Fu Panda",
-            b: "Mulan",
-            c: "The Karate Kid",
-            d: "Crouching Tiger, Hidden Dragon",
-        },
-        correct: "Kung Fu Panda",
-        letter: "a",
-    },
-    {
-        id: 34,
-        question: "&#x1F344; &#x1F334; &#x1F411;",
-        answers:{
-            a: "Bee Movie",
-            b: "Antz",
-            c: "A Bug's Life",
-            d: "Minuscule: Valley of the Lost Ants",
-        },
-        correct: "A Bug's Life",
-        letter: "c",
-    },
-    {
-        id: 35,
-        question: "&#x1F5E1; &#x1F409; &#x1F335;",
-        answers:{
-            a: "Shrek",
-            b: "Fairy Tale: A True Story",
-            c: "The Chronicles of Narnia",
-            d: "Alice in Wonderland",
-        },
-        correct: "Shrek",
-        letter: "a",
-    },
-    {
-        id: 36,
-        question: "&#x1F3AA; &#x1F33D; &#x1F3C8;",
-        answers:{
-            a: "The Wrestler",
-            b: "Fighting with My Family",
-            c: "Rocky",
-            d: "Creed",
-        },
-        correct: "Rocky",
-        letter: "c",
-    },
-    {
-        id: 37,
-        question: "&#x1F981; &#x1F3F0; &#x1F0CF;",
-        answers:{
-            a: "Top Gun",
-            b: "Air Force One",
-            c: "Black Hawk Down",
-            d: "The Hurt Locker",
-        },
-        correct: "Top Gun",
-        letter: "a",
-    },
-    {
-        id: 38,
-        question: "&#x1F916; &#x1F41B; &#x1F409;",
-        answers:{
-            a: "Finding Dory",
-            b: "Shark Tale",
-            c: "Deep Blue Sea",
-            d: "Jaws",
-        },
-        correct: "Finding Dory",
-        letter: "a",
-    },
-   
+    
     
 ]
 
@@ -525,7 +357,7 @@ $(document).on(' touchstart click', '.start', function(e){
 
 function currentQuestion(count){
     // adds question number to the side ot the ticket stub
-    $('#qNum').html("Q. No. " + (qCount+1) + " /"+Math.round(movies.length/2))
+    $('#qNum').html("Q. No. " + (qCount+1) + " /"+Math.round(15))
     $('.choice').removeClass('correctAnswer incorrectAnswer');
 
     // adds the hov class that causes the answer choice to hover
@@ -534,8 +366,8 @@ function currentQuestion(count){
     y = true;
 
     // displays the question if there are questions left to answer
-    if (count < (movies.length/2)){
-        timeLeft = 20;
+    if (count < (15)){
+        timeLeft = 5;
         $('#timer').removeClass('correctHeader incorrectHeader').css('color', '#000000');
         // $('#timer').text("Time Remaining: " + timeLeft + ' seconds');
         // myTimer = setInterval(countdown, 1000);

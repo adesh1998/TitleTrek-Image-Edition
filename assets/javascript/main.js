@@ -114,6 +114,8 @@ init();
 function init() {
     imageSet = images.set1;
     count = 2; // use to dynamically change imageSet 
+    total=0;
+    correct=0;
     guesses = 3;
     width = 10;
     render();
@@ -145,23 +147,19 @@ function handleSubmit(evt) {
     // Get input value, set to checkAnswer variable
     var checkAnswer = inputEl.value.toUpperCase();
     // checks if imageSet is on set 10 alert congrats
-    if (imageSet === images.set10) {
-        swal.fire({
-            type: 'success',
-            text: 'Congratualtions! You Won!'
-        })
-        //disallow user to enter answers
-        inputEl.disabled = true;
-        // if user runs out of guesses alert prompts game over
-    } else if (guesses === 1) {
+   if (guesses === 1 & total!=10) {
+        imageSet = images[`set${count}`]
+        
         swal.fire({
             type: 'error',
-            text: 'Game Over!'
+            text: 'Incorrect!',
         })
-        guesses = 0;
+        total++
+        count++ //increment by 1
+        guesses = 3;
 
         // disallow user to enter answers
-        inputEl.disabled = true;
+        
         //if user input is correct, move on to next set using string interperlation with count var
     } else if (checkAnswer === imageSet.answer) {
         imageSet = images[`set${count}`]
@@ -171,6 +169,9 @@ function handleSubmit(evt) {
         })
         //increase width of progress bar
         width += 10
+        correct++
+        count++ //increment by 1
+        total++
         progEl.style.width = width + '%'
 
     } else {
@@ -179,9 +180,21 @@ function handleSubmit(evt) {
             text: 'Try Again!',
         })
         guesses = guesses - 1;
+        
 
     }
-    count++ //increment by 1
+    if (total === 10) {
+        swal.fire({
+            type: 'success',
+            text: 'Congratualtions! Your score is '+correct
+        })
+        //disallow user to enter answers
+        localStorage.setItem('correct', correct);
+        localStorage.setItem('total', total);
+        window.location.href = "result.html";
+        // if user runs out of guesses alert prompts game over
+    } 
+    
     inputEl.value = ''; // reset input
     render();
 }

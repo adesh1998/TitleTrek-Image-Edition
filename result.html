@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Novice Trek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/result.css" />
+    <title>Result Page</title>
+    
+</head>
+<body>
+    <div id="background"></div>
+    <h1 id="h1t">&#x1F37F; Advanced Trek &#x1F37F;</h1>
+    <h2 id="tag">Guess the Movie Name from Picture</h2>
+    
+    <button onclick="redirectToGifGame()"  class="start" > &#x1F3A5; START AGAIN! &#x1F3AC;</button>
+    <button onclick="redirectToEmojiGame()"  class="start" > &#x1F3A5; Novice Trek! &#x1F3AC;</button>
+    <div id="ticketContainer">
+        <img id="ticket" src="assets/images/ticket.png">
+        <h3 id="emoji"></h3>
+        <h3 id="qNum"></h3>
+        <div id="results">
+            <h3id="done">Trivia Completed! Here's how you did!</h3>
+            <div id="correct">
+                <h3>Correct Answers</h3>
+                <h3 id="corNum"></h3>
+            </div>
+            <div id="incorrect">
+                <h3>Incorrect Answers</h3>
+                <h3 id="incorNum"></h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript to retrieve the score values from the previous page
+        const urlParams = new URLSearchParams(window.location.search);
+        const correct = localStorage.getItem('correct');
+        const total = localStorage.getItem('total');
+
+        // Perform the desired operations with the retrieved values
+        const incorrect = total - correct;
+
+
+        // Display the results on the page
+        document.getElementById('corNum').innerText =  `${correct}`;
+        document.getElementById('incorNum').innerText =    `${incorrect}`;
+    function redirectToGifGame() {
+            window.location.href = "AdvancedTrek.html";
+        }
+        function redirectToEmojiGame() {
+            window.location.href = "NoviceTrek.html";
+        }
+        
+    </script>
+    
+</body>
+</html>

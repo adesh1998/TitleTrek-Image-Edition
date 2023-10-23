@@ -10,18 +10,17 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Limelight&display=swap"
             rel="stylesheet">
-        <script defer src="js/main.js"></script>
+        <script defer src="assets/javascript/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     </head>
 
     <body>
-        <header>
-            <h1>Guess That Movie</h1>
 
-        </header>
+            <h1 id="h1t">&#x1F37F; Advanced Trek &#x1F37F;</h1>
+
 
         <main>
-                        <h3>What movie do these three photos evoke?</h3>
+            <h2 id="tag">Guess the Movie Name from Pictures</h2>
                         
                         <div class="images-wrapper">
                             <div><img id="img1"></div>
@@ -31,8 +30,8 @@
                         <div class="game-content">
                             <center>
                                 <input id="input"></input>
-                            <button class="adv" id="submit">Submit</button>
-                            <button class="adv" id="hint">Hint</button>
+                            <button id="submit">Submit</button>
+                            <button id="hint">Hint</button>
                         </center>
                         <h2 id="guesses"></h2>
 
@@ -40,10 +39,7 @@
 
                     </div>
                 </main>
-                <footer>
-
-
-                </footer>
+              
 
 
 

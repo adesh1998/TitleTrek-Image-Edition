@@ -1,0 +1,439 @@
+body, html{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: rgba(0, 255, 255, 0.171);   */
+    font-family: 'Song Myung', serif;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    background-color: #FFFADD;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    /*novice=zinder=-5*/
+}
+
+div{
+   margin: 0 auto;
+   width: 50vw;
+   height: fit-content;
+}
+#mainh1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: -300px;
+    color: #94A684;
+}
+
+#line{
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    margin-top: -45px;
+    color: #94A684;
+    
+}
+
+img {
+    width: 300px; 
+    height: auto;
+    object-position: 20px 0;
+    max-width: 100%;
+    margin-right: 850px;
+    margin-top: 6px;
+}
+
+#h1t{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    color: #94A684;
+    padding-top: 30px;
+}
+
+#tag{
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    margin-top: 10px;
+    color: #94A684;  
+}
+
+.level{
+    font-size: 20px;
+    color: black;
+    background-color: #AEC3AE;
+    border-radius: 15px;
+    display: block;
+    
+    padding: 0.7vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1%;
+    font-family: 'Song Myung', serif;
+}
+
+.level:hover{
+    transform: scale(1.1);
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
+.level:focus {
+    outline:0;
+}
+
+.level:active {
+    transform: translateY(4px);
+}
+
+.start{
+    font-size: 20px;
+    color: black;
+    background-color: #AEC3AE;
+    border-radius: 15px;
+    display:block;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 20px;
+    padding: 0.7vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1%;
+    font-family: 'Song Myung', serif;
+}
+
+.start:hover{
+    transform: scale(1.1);
+    background-color:#ffffff;
+    cursor: pointer;
+}
+
+.start:focus {
+    outline:0;
+}
+
+.start:active {
+    transform: translateY(4px);
+}
+
+#ticketContainer{
+    
+    /*position: relative;*/
+    text-align: center;
+    margin-top: 10px;
+}
+#ticket{
+    width: 80%;
+    height: 80%;
+    padding-left: 60px;
+}
+#emoji{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: 3.0vw;
+    line-height: 5vw;
+}
+
+#filmContainer{
+  
+    position: relative;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+#film{
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+}
+
+tr{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+#a, #b, #c, #d{
+    position: absolute;
+    width: 10.6vw;
+    height: 8.7vw;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    background-color: #ffffffaf;
+    border: 1px solid #ffffffaf;
+}
+
+#a{
+    top: 12%;
+    left: 3.5%;
+}
+
+#b{
+    top: 12%;
+    left: 28.3%;
+    
+}
+#c{
+    top: 12%;
+    right: 23.3%;
+
+}
+#d{
+    top: 11%;
+    right: -1.5%;
+}
+
+.hov:hover{
+    background-color: #ffd6bb !important;
+    border: 1px solid #ff6600 !important;
+}
+
+.correctAnswer{
+    background-color:#04b604b7 !important;
+    border-color: #008000 !important;
+}
+
+.correctHeader{
+    color: #000000 !important;
+    background-color: #03b30380;
+    border-radius: 10px;
+
+}
+
+.incorrectAnswer{
+    background-color:#ff0000b3 !important;
+    border-color: #ff0000 !important;
+}
+
+.incorrectHeader{
+    color: #000000 !important;
+    background-color: #ff000066;
+    border-radius: 10px;
+  
+}
+
+#qNum{
+    position: absolute;
+    transform: rotate(-90deg);
+    right: 29%;
+    bottom: 56%;
+    font-size: 2vw;
+}
+
+#results{
+   
+    font-size: 1.6vw;
+    font-weight: bold;
+    position: absolute;
+    top: 57%;
+    right: 25.5%;
+    
+}
+#done{
+    position: absolute;
+    top: 34%;
+    right: 27%;
+}
+
+#playAgain{
+
+    justify-content: center;
+}
+
+#correct{
+    float: left;
+    width: fit-content;
+    position: absolute;
+    left: 22%;
+    top: 195%;
+    background-color: #0b920bd0;
+    color: white;
+    padding: 0.7%;
+    border-radius: 5px;
+}
+
+#incorrect{
+    float: left;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 195%;
+    background-color: #ff0000cb;
+    color: #ffffff;
+    padding: 0.7%;
+    border-radius: 5px;
+   
+}
+
+@media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:portrait)
+{
+   #orientation{
+       display: block;
+   }
+   #curtainRight{
+        display:none;
+    }
+    #curtainLeft{
+        display:none;
+    }
+
+}
+
+
+@media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:landscape)
+{
+   #orientation{
+    display: none;
+    }
+   
+}
+
+@media screen and (max-device-width: 800px) and (orientation: portrait)
+{
+    #curtainRight{
+        right: -31vw;
+    }
+    #curtainLeft{
+        left: -31vw;
+    }
+}
+
+
+
+@media screen and (max-width: 1230px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -6vw;
+    }
+    #curtainLeft{
+        left: -6vw;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -8vw;
+    }
+    #curtainLeft{
+        left: -8vw;
+    }
+
+}
+
+@media screen and (max-width: 850px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -12vw;
+    }
+    #curtainLeft{
+        left: -12vw;
+    }
+
+}
+
+@media screen and (max-width: 725px)  and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -16vw;
+    }
+    #curtainLeft{
+        left: -16vw;
+    }
+
+}
+
+@media screen and (max-width: 640px)  and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -20vw;
+    }
+    #curtainLeft{
+        left: -20vw;
+    }
+
+}
+
+@media screen and (max-width: 570px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -26vw;
+    }
+    #curtainLeft{
+        left: -26vw;
+    }
+
+}
+
+@media screen and (max-width: 500px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -30vw;
+    }
+    #curtainLeft{
+        left: -30vw;
+    }
+
+}
+
+@media screen and (max-width: 440px) and (min-device-width: 1024px)
+{
+    #curtainRight{
+        right: -21vw;
+    }
+    #curtainLeft{
+        left: -21vw;
+    }
+
+} 
+
+@media screen and (orientation:landscape)
+{
+    #curtainRight{
+        right: -4vw;
+    }
+    #curtainLeft{
+        left: -4vw;
+    }
+   
+}
+
+/* ----------- iPad Pro -----------
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+      #curtainRight, #curtainLeft{
+          display: none;
+      }
+}
+
+@media screen and (device-width: 768px) and (device-height: 1024px) 
+{
+    #curtainRight, #curtainLeft{
+        display: none;
+    }
+}

@@ -17,6 +17,7 @@
     <h2 id="tag">Guess the Movie Name from Pictures</h2>
     <button class="start" id ="play"> &#x1F3A5; BEGIN &#x1F3AC;</button>
     <button class="start" id ="playAgain"> &#x1F3A5; START AGAIN! &#x1F3AC;</button>
+    <button onclick="redirectToGifGame()"  class="start" id ="playAgain" > &#x1F3A5; Advanced Trek! &#x1F3AC;</button>
     <div id="ticketContainer">
         <img id="ticket" src="assets/images/ticket.png">
         <h3 id="emoji"></h3>
@@ -59,5 +60,14 @@
             </tr>
         </table>
     </div>
+
+    <script>
+       
+    function redirectToGifGame() {
+            window.location.href = "AdvancedTrek.html";
+        }
+       
+        
+    </script>
 </body>
 </html>
