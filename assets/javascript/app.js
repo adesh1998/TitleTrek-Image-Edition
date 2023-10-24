@@ -429,7 +429,7 @@ function noAnswerSelected(){
     qCount++;
     setTimeout(function(){
         currentQuestion(qCount)
-    }, 4000);
+    }, 2000);
     
     
 }
@@ -452,7 +452,7 @@ $(document).on(' touchstart click', '.choice', function (e){
             qCount++;
             setTimeout(function(){
                 currentQuestion(qCount)
-            }, 4000);
+            }, 500);
         }
         else{
             y = false;
@@ -463,7 +463,7 @@ $(document).on(' touchstart click', '.choice', function (e){
             qCount++
             setTimeout(function(){
                 currentQuestion(qCount)
-            }, 4000);
+            }, 500);
         }
     }
         

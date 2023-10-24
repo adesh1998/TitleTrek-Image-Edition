@@ -286,6 +286,11 @@ tr{
     border-radius: 5px;
    
 }
+#orientation{
+    display: none;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
 
 @media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:portrait)
 {
