@@ -172,7 +172,7 @@ var movies = [
             a: "How I Met Your Mother",
             b: "The Big Bang Theory",
             c: "Friends",
-            d: "4. New Girl",
+            d: "New Girl",
         },
         correct: "Friends",
         letter: "c",
@@ -283,7 +283,7 @@ var movies = [
 
     {
         id: 21,
-        question: "&#x1F9D9; &#x1F3F0; &#x1F989;&#x1FA84;&#x1F9F9;&#x26A1;&#x1F913;",
+        question: "&#x1F9D9; &#x1F3F0; &#x1F989;<br>&#x1F9F9;&#x26A1;&#x1F913;",
         answers:{
             a: "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
             b: "Harry Potter and the Sorcerer's Stone",
@@ -312,7 +312,7 @@ var movies = [
         answers:{
             a: "A Night to Remember",
             b: "The Poseidon Adventure",
-            c: "3. Ghost Ship",
+            c: "Ghost Ship",
             d: "Titanic",
         },
         correct: "Titanic",
@@ -329,6 +329,133 @@ var movies = [
         },
         correct: "Frozen",
         letter: "a",
+    },
+    
+    {
+        id: 25,
+        question: "&#x1F34A; &#x1F195; &#x26AB;",
+        answers:{
+            a: "Weeds",
+            b: "Wentworth",
+            c: "Orange Is the New Black",
+            d: "Breaking Bad",
+        },
+        correct: "Orange Is the New Black",
+        letter: "c",
+    },
+
+    {
+        id: 26,
+        question: "&#x1F620; &#x1F468;",
+        answers:{
+            a: "Angry Men",
+            b: "12 Angry Women",
+            c: "Furious 7",
+            d: "The Wrath of Vajra",
+        },
+        correct: "Angry Men",
+        letter: "a",
+    },
+
+    {
+        id: 17,
+        question: "&#129308; &#129307; &#9827;",
+        answers:{
+            a: "Battle Royale",
+            b: "Brawl in Cell Block 99",
+            c: "The Underground Fight Club",
+            d: "Fight Club",
+        },
+        correct: "Fight Club",
+        letter: "d",
+    },
+
+    {
+        id: 28,
+        question: "&#x1F3A4; &#x1F327; &#x1F4CB;",
+        answers:{
+            a: "La La Land",
+            b: "An American in Paris",
+            c: "Singing in the rain list",
+            d: "A Star is Born",
+        },
+        correct: "Singing in the rain list",
+        letter: "c",
+    },
+
+    {
+        id: 29,
+        question: "&#x1F621; &#x1F402; ",
+        answers:{
+            a: "Rocky",
+            b: "Ragging Bull",
+            c: "Cinderella Man",
+            d: "Million Dollar Baby",
+        },
+        correct: "Ragging Bull",
+        letter: "b",
+    },
+    {
+        id: 30,
+        question: "&#x1F408; &#x1F42D; &#x1F9C0;",
+        answers:{
+            a: "Tom and Jerry",
+            b: "Alvin and the Chipmunks",
+            c: "The Lion King",
+            d: "The Secret Life of Pets",
+        },
+        correct: "Tom and Jerry",
+        letter: "a",
+    },
+
+    {
+        id: 31,
+        question: "&#x2744; &#x1F684;",
+        answers:{
+            a: "The Polar Bear King",
+            b: "The Polar Bear Club",
+            c: "The Polar Bear Family and Me",
+            d: "Polar Express",
+        },
+        correct: "Polar Express",
+        letter: "d",
+    },
+    {
+        id: 32,
+        question: "&#x1F987; &#x1F468;",
+        answers:{
+            a: "Batman & Robin",
+            b: "Batman",
+            c: "Batman Begins",
+            d: "The Dark Knight",
+        },
+        correct: "Batman",
+        letter: "b",
+    },
+
+    {
+        id: 33,
+        question: "&#127880; &#129313;",
+        answers:{
+            a: "It Follows",
+            b: "IT",
+            c: "It Comes at Night",
+            d: "It's a Wonderful Life",
+        },
+        correct: "IT",
+        letter: "b",
+    },
+    {
+        id: 34,
+        question: "&#x1F47B; &#x1F47B; &#x1F6AB; &#x1F392; &#x1F52B",
+        answers:{
+            a: "BEETLEJUICE",
+            b: "GOOSEBUMPS",
+            c: "CASPER",
+            d: "GHOSTBUSTERS",
+        },
+        correct: "GHOSTBUSTERS",
+        letter: "d",
     },
     
     
