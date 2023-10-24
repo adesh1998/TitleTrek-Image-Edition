@@ -291,154 +291,57 @@ tr{
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
+/* The existing CSS rules you provided */
 
-@media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:portrait)
-{
-   #orientation{
-       display: block;
-   }
-   #curtainRight{
-        display:none;
+/* Media Queries for smaller screens */
+
+/* For devices with smaller width and height, adjust the styling accordingly */
+@media only screen and (max-width: 480px) {
+    #mainh1 {
+      font-size: 40px;
+      margin-top: -150px;
     }
-    #curtainLeft{
-        display:none;
+  
+    #line {
+      font-size: 20px;
+      margin-top: -25px;
     }
-
-}
-
-
-@media screen and (max-device-width: 480px) and (max-width: 650px) and (orientation:landscape)
-{
-   #orientation{
-    display: none;
+  
+    img {
+      width: 200px;
+      margin-right: 250px;
+      margin-top: 3px;
     }
-   
-}
-
-@media screen and (max-device-width: 800px) and (orientation: portrait)
-{
-    #curtainRight{
-        right: -31vw;
+  
+    .level {
+      font-size: 16px;
+      padding: 5px;
+      margin-bottom: 5%;
     }
-    #curtainLeft{
-        left: -31vw;
+  }
+  
+  /* For devices with slightly larger screens but still smaller than desktop, adjust the styling accordingly */
+  @media only screen and (max-width: 768px) {
+    #mainh1 {
+      font-size: 60px;
+      margin-top: -220px;
     }
-}
-
-
-
-@media screen and (max-width: 1230px) and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -6vw;
+  
+    #line {
+      font-size: 25px;
+      margin-top: -35px;
     }
-    #curtainLeft{
-        left: -6vw;
+  
+    img {
+      width: 250px;
+      margin-right: 300px;
+      margin-top: 4px;
     }
-}
-
-@media screen and (max-width: 1000px) and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -8vw;
+  
+    .level {
+      font-size: 18px;
+      padding: 7px;
+      margin-bottom: 3%;
     }
-    #curtainLeft{
-        left: -8vw;
-    }
-
-}
-
-@media screen and (max-width: 850px) and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -12vw;
-    }
-    #curtainLeft{
-        left: -12vw;
-    }
-
-}
-
-@media screen and (max-width: 725px)  and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -16vw;
-    }
-    #curtainLeft{
-        left: -16vw;
-    }
-
-}
-
-@media screen and (max-width: 640px)  and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -20vw;
-    }
-    #curtainLeft{
-        left: -20vw;
-    }
-
-}
-
-@media screen and (max-width: 570px) and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -26vw;
-    }
-    #curtainLeft{
-        left: -26vw;
-    }
-
-}
-
-@media screen and (max-width: 500px) and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -30vw;
-    }
-    #curtainLeft{
-        left: -30vw;
-    }
-
-}
-
-@media screen and (max-width: 440px) and (min-device-width: 1024px)
-{
-    #curtainRight{
-        right: -21vw;
-    }
-    #curtainLeft{
-        left: -21vw;
-    }
-
-} 
-
-@media screen and (orientation:landscape)
-{
-    #curtainRight{
-        right: -4vw;
-    }
-    #curtainLeft{
-        left: -4vw;
-    }
-   
-}
-
-/* ----------- iPad Pro -----------
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-      #curtainRight, #curtainLeft{
-          display: none;
-      }
-}
-
-@media screen and (device-width: 768px) and (device-height: 1024px) 
-{
-    #curtainRight, #curtainLeft{
-        display: none;
-    }
-}
+  }
+  
